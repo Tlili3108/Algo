@@ -1,0 +1,24 @@
+ALGORITHM check_point
+
+    ch : CHAR
+    lgt, nbrs, nbrv : INTEGER 
+
+BEGIN
+    lgt:=0;
+    nbrv:= 0;
+    nbrs:= 1;
+    READ (ch);
+
+    WHILE (ch <> '.') DO
+        lgt:= lgt+1;
+    IF (ch <> ' ') THEN
+        nbrs:= nbrs+1;
+    END_IF
+    IF (ch ='a' or ch ='A' ch = 'e' or ch = 'E' ch ='i' or ch ='I' ch ='o'  or ch ='O' ch ='u' or ch ='U' ch ='y' or ch ='Y' THEN
+        nbrv:= nbrv+1
+    END_IF
+
+    END_WHILE
+   WRITE ( ' the length of the sentence :' ,lgt );
+   WRITE ( ' the number of the space :' ,nbrs );
+   WRITE ( ' the number of the vowels :' ,nbrv );
